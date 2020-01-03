@@ -1,2 +1,1 @@
-# cauliflowers.xyz
-西兰花设计工作室
+# Cauliflowers 西兰花工作室
