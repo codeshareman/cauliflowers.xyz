@@ -32,14 +32,7 @@ let defaultOpenKey = "";
 @inject("authStore")
 @observer
 class HeaderView extends React.Component<P, S> {
-  UNSAFE_componentWillMount() {
-    //没有权限信息，加载权限信息,有则直接读取
-    const { isInit } = this.props.authStore;
-    if (!isInit) {
-      this.getPerms();
-    }
-  }
-
+  
   getPerms = async () => {
     const res = await Api.account.perms();
     if (HTTP_STATUS.SUCCESSS === res.code) {

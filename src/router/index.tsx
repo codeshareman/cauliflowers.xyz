@@ -1,8 +1,4 @@
-import config, { noMenuConfig } from "./config";
-import { renderRouter, getRouter } from "./utils";
-
-//export const MainRoutes = renderRouter(config);
+import config from "./config";
+import { getRouter } from './utils';
 
 export const MainRoutes = getRouter(config);
-
-export const noMenuRoutes = getRouter(noMenuConfig);
