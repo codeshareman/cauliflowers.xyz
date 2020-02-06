@@ -1,8 +1,9 @@
-import * as React from "react";
-import { withRouter, RouteComponentProps } from "react-router-dom";
+import * as React from 'react';
+import { withRouter, RouteComponentProps } from 'react-router-dom';
 
-import HeaderView from "./HeaderView";
-import FooterView from "./FooterView";
+import HeaderView from './HeaderView';
+import FooterView from './FooterView';
+import ContentView from './ContentView';
 
 type P = RouteComponentProps & {
   hideMenu?: boolean;
@@ -15,12 +16,7 @@ class MainLayout extends React.Component<P, S> {
     return (
       <>
         <HeaderView hideMenu={hideMenu} />
-        <div
-          className="main-content"
-          style={hideMenu ? { backgroundColor: "#fff" } : {}}
-        >
-          {this.props.children}
-        </div>
+        <ContentView>{this.props.children}</ContentView>
         <FooterView />
       </>
     );

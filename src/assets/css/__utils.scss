@@ -1,0 +1,7 @@
+@mixin clearFloat {
+  display: block;
+  clear: both;
+  content: '';
+  visibility: hidden;
+  height: 0;
+}

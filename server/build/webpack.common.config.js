@@ -18,7 +18,7 @@ module.exports = {
     alias: {
       '@': resolve('src'),
       //antd icon 优化
-      '@ant-design/icons/lib/dist$': resolve('src/assets/icons/index'),
+      // '@ant-design/icons/lib/dist$': resolve('src/assets/icons/index'),
     },
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
   },
@@ -110,7 +110,6 @@ module.exports = {
   },
 
   optimization: {
-    
     // runtimeChunk: {
     //   name: 'manifest',
     // },
@@ -165,8 +164,8 @@ module.exports = {
       },
     ]),
     new MiniCssExtractPlugin({
-      filename: 'css/[name].css',
-      chunkFilename: 'css/[name].css',
+      filename: 'css/[name]_[hash].css',
+      chunkFilename: 'css/[name]_[hash].css',
     }),
     new HtmlWebpackPlugin({
       path: resolve('dist'),

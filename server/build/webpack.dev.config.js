@@ -5,11 +5,11 @@ const config = require("../config");
 
 module.exports = merge(common, {
   mode: "development",
-  devtool: "source-map",
+  devtool: "eval",
   entry: "./src/index.tsx",
   output: {
-    publicPath: `//${utils.getIP()}:${config.port}/`,
-    // publicPath: '/',
+    // publicPath: `//${utils.getIP()}:${config.port}/`,
+    publicPath: '/',
     path: utils.resolve("dist"),
     filename: "js/[name].js",
     chunkFilename: "js/[name]_[hash:6].js"
@@ -22,7 +22,7 @@ module.exports = merge(common, {
       disabledDotRule: true
     },
     progress: true,
-    hot: false,
+    hot: true,
     disableHostCheck: true,
     compress: true,
     //color: true,

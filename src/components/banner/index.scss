@@ -1,0 +1,23 @@
+.banner {
+  height: 450px;
+  padding: 150px 0;
+  background: url(//s1.ljcdn.com/feroot/pc/asset/img/home/bannerV2.jpg) no-repeat center;
+  background-size: cover;
+  > .container {
+    width: 1170px;
+    margin: 0 auto;
+    h1,
+    p {
+      color: #fff;
+      text-align: center;
+    }
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+    .search {
+      &-box {
+      }
+    }
+  }
+}

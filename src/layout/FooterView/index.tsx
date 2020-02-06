@@ -1,7 +1,6 @@
 import * as React from 'react';
 
-import "./index.scss"
-import { Layout } from 'antd';
+import './index.scss';
 
 type P = {};
 type S = {};
@@ -10,9 +9,8 @@ type S = {};
 class FooterView extends React.Component<P, S> {
   render() {
     return (
-      <div className="footer-wrapper">
-        Copyright © 2012-2019 www.ximalaya.com lnc.ALL Rights Reserved 上海喜马拉雅网络科技有限公司
-        版权所有
+      <div className="footer">
+        Copyright © 2012-2020 www.cauliflower.xyz lnc.ALL Rights Reserved 成都西兰花设计工作室
       </div>
     );
   }

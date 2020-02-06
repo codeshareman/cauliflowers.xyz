@@ -1,0 +1,43 @@
+@import '../../assets/css/__utils.scss';
+
+.waterfall {
+  position: relative;
+  > .item {
+    position: absolute;
+    width: 20%;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    .inner {
+      background: #fff;
+      border-radius: 3px;
+      .cover {
+        img {
+          border-radius: 3px 3px 0 0;
+          width: 100%;
+        }
+      }
+      .info {
+        border-top: 1px solid #efefef;
+        padding: 15px 10px;
+        .avatar {
+          img {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+          }
+          strong {
+            margin-left: 4px;
+            color: #757373;
+          }
+        }
+      }
+    }
+  }
+}
+
+.clearFloat {
+  zoom: 1;
+  &::after {
+    @include clearFloat;
+  }
+}
