@@ -41,9 +41,9 @@ class WaterFall extends Component<FallProps, S> {
       item.style.top = Math.floor(index / 5) < 1 ? 0 : top_h + 'px';
       topArr.push(top_h);
     });
-    this.$watefall.style.height = Math.max(...topArr) + 300 + 'px';
-    console.dir(this.$watefall);
-    console.log(Math.max(...topArr));
+    const maxVal = Math.max(...topArr);
+    const maxIndex = topArr.indexOf(maxVal);
+    this.$watefall.style.height = maxVal + waterFallItems[maxIndex].offsetHeight + 'px';
   };
 
   getEleTopDistance = (waterFallItems: Array<any>, index: number) => {
