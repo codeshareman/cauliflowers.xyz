@@ -1,0 +1,40 @@
+#marquee {
+    position:relative;
+    width: 100%;
+    overflow:hidden;
+    // border: 10px solid #B45B3E;
+  }
+  #marquee .wrapper{
+    // transform: rotate(-1deg);
+  }
+  #marquee img {
+    border:0px;
+    width: 150px;
+    height: 160px;
+  }
+  #marquee dl, #marquee dt,#marquee dd,#marquee a {
+    float:left;
+    margin:0;
+    padding:0;
+  }
+  #marquee{
+      dt,dd {
+          > div{
+              overflow: hidden;
+          }
+      }
+      dt {
+          > div {
+              &:first-child{
+                margin-bottom: 10px;
+              }
+          }
+      }
+  }
+  #marquee a{
+    margin-right: 10px;
+  }
+  #marquee dl{
+    width: 1000%;
+    padding: 10px;
+  }

@@ -9,10 +9,11 @@ class HomePage extends Component {
         <div className="cate-recommend">
           <h3 className="title">Recommend For u</h3>
           <div className="container">
+            <Recommend.Topic ></Recommend.Topic>
+            <Recommend.Article></Recommend.Article>
             <Recommend.Work></Recommend.Work>
-            {/* <Recommend.Article></Recommend.Article>
-            <Recommend.Desginer></Recommend.Desginer>
-            <Recommend.Comment></Recommend.Comment> */}
+            {/* <Recommend.Desginer></Recommend.Desginer> */}
+            {/* <Recommend.Comment></Recommend.Comment> */}
           </div>
         </div>
       </div>

@@ -64,7 +64,6 @@
     "@types/react-dom": "^16.9.2",
     "@types/react-router-dom": "^5.1.3",
     "@types/validatorjs": "^3.15.0",
-    "@xmly/cbp-spec": "^0.0.3",
     "antd": "^3.24.1",
     "axios": "^0.19.0",
     "better-scroll": "^1.15.2",
