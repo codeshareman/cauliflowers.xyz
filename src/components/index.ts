@@ -1,6 +1,6 @@
 import HomeNav from './nav';
 import HomeSearch from './search';
-import Banner from './Banner';
+import Banner from './banner';
 import WaterFall from './waterfall';
 import Recommend from './recommend';
 
